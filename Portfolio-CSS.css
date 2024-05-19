@@ -1,0 +1,294 @@
+body {
+    font-family: "Century Gothic", 'Lato', sans-serif;
+    margin: 0; /* Ajout pour réinitialiser les marges */
+    padding: 0; /* Ajout pour réinitialiser les marges */
+}
+
+a {
+    text-decoration: none;
+}
+
+.et-hero-tabs,
+.et-slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    background: #eee;
+    text-align: center;
+    padding: 0 2em;
+}
+
+.et-hero-tabs h1,
+.et-slide h1 {
+    font-size: 2rem;
+    margin: 0;
+    letter-spacing: 1rem;
+}
+
+.et-hero-tabs h3,
+.et-slide h3 {
+    font-size: 1rem;
+    letter-spacing: 0.3rem;
+    opacity: 0.6;
+}
+
+.et-hero-tabs-container {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    background: #fff;
+    z-index: 10;
+}
+
+.et-hero-tabs-container--top {
+    position: fixed;
+    top: 0;
+}
+
+.et-hero-tab {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    color: #000;
+    letter-spacing: 0.1rem;
+    transition: all 0.5s ease;
+    font-size: 0.8rem;
+}
+
+.et-hero-tab:hover {
+    color: white;
+    background: rgba(102, 177, 241, 0.8);
+}
+
+.et-hero-tab-slider {
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    height: 6px;
+    background: #66b1f1;
+    transition: left 0.3s ease;
+}
+
+@media (min-width: 800px) {
+    .et-hero-tabs h1,
+    .et-slide h1 {
+        font-size: 3rem;
+    }
+    .et-hero-tabs h3,
+    .et-slide h3 {
+        font-size: 1rem;
+    }
+    .et-hero-tab {
+        font-size: 1rem;
+    }
+}
+
+  .et-slide#tab-MonProfil .content-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: -200px;
+  }
+  
+  .et-slide#tab-MonProfil .content-wrapper .left-content,
+  .et-slide#tab-MonProfil .content-wrapper .right-content {
+    flex: 1;
+  }
+  
+  .et-slide#tab-MonProfil .content-wrapper img {
+    max-width: 150%;
+    padding-top: 20px;
+  }
+  
+  .et-slide#tab-MonProfil .bottom-content {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .et-slide#tab-MonProfil .left-content {
+    margin-left: 120px;
+  }
+  
+  .et-slide#tab-MonProfil .bottom-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Ajustez si nécessaire */
+    align-items: center;
+  }
+  
+.et-slide#tab-MonProfil .map {
+    flex: 1;
+    max-width: 50%;
+    max-height: 30%;
+    margin-left: 80px; /* Ajoutez de l'espace à gauche du texte */
+    margin-top: -200px;
+  }
+
+.et-slide#tab-MonProfil .text {
+  flex: 1;
+  max-width: 50%;
+  max-height: 50%;
+  margin-left: 80px; /* Ajoutez de l'espace à gauche du texte */
+  margin-top: -100px;
+}
+
+@media (max-width: 767px) {
+    .et-slide#tab-MonProfil .map,
+    .et-slide#tab-MonProfil .text {
+      flex-basis: 100%; /* Sur les petits écrans, occuper toute la largeur */
+    }
+
+.map-container {
+  width: 200%;
+  margin: 0 auto;
+  height: 0;
+  padding-top: 20%;
+  position: relative;
+  display: none; /* Hide for small screens */
+  iframe {
+    width: 250%;
+    height: 300%; /* had to specify height/width */
+    position: absolute;
+    top: 0; 
+    right: 0;
+    left: 0; 
+    bottom: 0;   
+  }
+}
+
+/* Medium Screens */
+@media all and (min-width: 34.375em) {
+  .map-container {
+    display: block;
+  } 
+  .static-img {
+    display: none; 
+  }
+}
+
+.pdf-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .pdf-container iframe {
+    width: 80%;
+    max-width: 800px;
+    height: 100%;
+  }
+  
+  .pdf-container a {
+    margin-top: 20px;
+    font-size: 1.2rem;
+  }
+
+/* Style du conteneur principal */
+.Contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Aligner les éléments verticalement */
+}
+
+/* Style du bloc contenant les informations personnelles */
+.personal-info, .Contact-form {
+    width: 45%;
+    min-height: 400px; /* Hauteur minimale des blocs */
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+/* Style du titre du bloc des informations personnelles */
+.personal-info h2, .Contact-form h2 {
+    margin-top: 0;
+}
+
+/* Style des éléments individuels du bloc des informations personnelles */
+.info-item {
+    margin-bottom: 15px;
+}
+
+/* Style des groupes de formulaire */
+.form-group {
+    margin-bottom: 15px;
+}
+
+/* Style des labels des champs de formulaire */
+label {
+    display: block;
+    font-weight: bold;
+}
+
+/* Style des champs de texte et des zones de texte */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Style du bouton d'envoi */
+button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Style du bouton d'envoi au survol */
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 767px) {
+  .et-slide#tab-MonProfil .content-wrapper {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0;
+  }
+
+  .et-slide#tab-MonProfil .content-wrapper .left-content,
+  .et-slide#tab-MonProfil .content-wrapper .right-content {
+    flex: 1;
+    max-width: 100%;
+    text-align: center; /* Aligner le texte au centre */
+    margin: 20px 0; /* Ajouter une marge top et bottom */
+  }
+
+  .et-slide#tab-MonProfil .content-wrapper img {
+    width: 80%;
+    max-width: 300px;
+    margin-top: 20px;
+  }
+
+  .et-slide#tab-MonProfil .bottom-content {
+    flex-direction: column;
+    margin-top: 0;
+    align-items: center; /* Aligner les éléments au centre */
+  }
+
+  .et-slide#tab-MonProfil .map,
+  .et-slide#tab-MonProfil .text {
+    flex-basis: 100%;
+    max-width: 80%; /* Réduire la largeur */
+    margin: 20px 0; /* Ajouter une marge top et bottom */
+  }
+
+  .et-slide#tab-MonProfil .map {
+    order: 2; /* Changer l'ordre d'affichage */
+  }
+}
+}

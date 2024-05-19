@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="Portfolio-CSS.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+  <!-- Hero -->
+  <section class="et-hero-tabs">
+    <h1>Portfolio Thomassin Steven</h1>
+    <h3>Résumé des compétences acquises et des projets réalisé</h3>
+    <div class="et-hero-tabs-container">
+      <a class="et-hero-tab" href="#tab-MonProfil">Mon Profil</a>
+      <a class="et-hero-tab" href="#tab-TableauDeSynthèseE4">Tableau de synthèse E4</a>
+      <a class="et-hero-tab" href="#tab-SituationsProfessionnelles">Situations Professionnelles</a>
+      <a class="et-hero-tab" href="#tab-RéalisationsProfessionnellesE5">Réalisations Professionnelles E5</a>
+      <a class="et-hero-tab" href="#tab-VeilleInformatique">Veille Informatique</a>
+      <a class="et-hero-tab" href="#tab-Contact">Contact</a>
+      <span class="et-hero-tab-slider"></span>
+    </div>
+  </section>
+
+  <!-- Main -->
+  <main class="et-main">
+      <main class="intro-section" id="tab-MonProfil">
+  <div class="container">
+    <div class="grid">
+      <div class="column-xs-12">
+        <ul class="slider">
+          <li class="slider-item active">
+            <div class="grid vertical">
+              <div class="column-xs-12 column-md-2 hide-mobile">
+                <div class="intro">
+                    <h1 class="title"><span class="underline">Mon Profil</span></h1>
+                </div>
+              </div>
+              <div class="column-xs-12 column-md-10">
+                <div class="image-holder1">
+                  <img src="https://png.pngtree.com/png-vector/20190710/ourlarge/pngtree-business-user-profile-vector-png-image_1541960.jpg"> 
+                </div>
+                <div class="grid">
+                  <div class="column-xs-12 column-md-9">
+                    <div class="intro show-mobile">
+                        <h1 class="title"><span class="underline">Mon Profil</span></h1>
+                    </div>
+                    <p class="description">Je m'appelle Steven Thomassin, j'ai 20 ans, passionné par les outils informatiques depuis que je suis petit, j'ai décidé après l'obtention d'un baccalauréat général de m'intéresser plus précisément au domaine de l'informatique en suivant un cursus de BTS Services Informatiques aux Organisations (SIO) afin de me professionnaliser dans ce domaine.</p>
+                    <p class="description">Mon projet est d'obtenir ce BTS SIO et de poursuivre mes études en alternance d'ingénierie informatique.</p>
+                    <p class="description">A l'issue de ces diplômes, j'aimerais pouvoir intégrer le monde du travail et exploiter mes connaissances en milieu professionnel.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="slider-item">
+            <div class="grid vertical">
+              <div class="column-xs-12 column-md-2 hide-mobile">
+                <div class="intro">
+                    <h1 class="title"><span class="underline">Formation</span></h1>
+                </div>
+              </div>
+              <div class="column-xs-12 column-md-10">
+                <div class="image-holder2">
+                  <img src="https://www.stpaulbb.org/wp-content/uploads/2021/10/SPBB_Banderole.png">
+                </div>
+                <div class="grid">
+                  <div class="column-xs-12 column-md-9">
+                    <div class="intro show-mobile">
+                      <a href="#">
+                        <h1 class="title"><span class="underline">Formation</span></h1>
+                      </a>
+                    </div>
+                    <p class="description">Le lycée Saint Paul Bourdon Blanc est une institution d'enseignement secondaire située dans la ville de Orléans, en France.</p>
+                    <p class="description">Il dispose d'infrastructures modernes pour l'enseignement, comprenant des salles de classe équipées de matériel audiovisuel, des laboratoires scientifiques, une bibliothèque, des salles informatiques et éventuellement des espaces dédiés à des activités artistiques ou sportives.</p>
+                    <p class="description">Le lycée Saint Paul Bourdon Blanc propose une gamme de filières d'enseignement général, technologique et professionnel conformément au système éducatif français. Cela peut inclure des filières littéraires, scientifiques, économiques et sociales, ainsi que des filières technologiques et professionnelles dans des domaines tels que l'informatique, l'électrotechnique, la gestion, etc.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="slider-item">
+            <div class="grid vertical">
+              <div class="column-xs-12 column-md-2 hide-mobile">
+                <div class="intro">
+                    <h1 class="title"><span class="underline">Formation</span></h1>
+                </div>
+              </div>
+              <div class="column-xs-12 column-md-10">
+                <div id="app">
+                  <div class="wrapper">
+                    <div class="card" v-for="post in filteredList">
+                      <div class="gallery">
+                        <div class="gallery-item">
+                          <img src="https://www.svgrepo.com/show/303205/html-5-logo.svg" alt="HTML">
+                          <p>HTML5</p>
+                        </div>
+                        <div class="gallery-item">
+                          <img src="https://www.svgrepo.com/show/452185/css-3.svg" alt="CSS">
+                          <p>CSS3</p>
+                        </div>
+                        <div class="gallery-item">
+                          <img src="https://www.svgrepo.com/show/508936/php02.svg" alt="PHP">
+                          <p>PHP</p>
+                        </div>
+                        <div class="gallery-item">
+                          <img src="https://www.svgrepo.com/show/452234/java.svg" alt="Java">
+                          <p>Java</p>
+                        </div>
+                        <div class="gallery-item">
+                          <img src="https://www.svgrepo.com/show/521288/javascript-16.svg" alt="JavaScript">
+                          <p>JavaScript</p>
+                        </div>
+                        <div class="gallery-item">
+                          <img src="https://www.svgrepo.com/show/452091/python.svg" alt="Python">
+                          <p>Python</p>
+                        </div>
+                        <div class="gallery-item">
+                          <img src="https://www.svgrepo.com/show/508947/symfony.svg" alt="Symfony">
+                          <p>Symfony</p>
+                        </div>
+                        <div class="gallery-item">
+                          <img src="https://www.svgrepo.com/show/303251/mysql-logo.svg" alt="MySQL">
+                          <p>MySQL</p>
+                        </div>
+                        <div class="gallery-item">
+                          <img src="https://www.svgrepo.com/show/354039/mariadb.svg" alt="MariaDB">
+                          <p>MariaDB</p>
+                        </div>
+                        <div class="gallery-item">
+                          <img src="https://www.svgrepo.com/show/475631/android-color.svg" alt="Android">
+                          <p>Android</p>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+                <div class="grid">
+                  <div class="column-xs-12 column-md-9">
+                    <div class="intro show-mobile">
+                      <a href="#">
+                        <h1 class="title"><span class="underline">Compétences</span></h1>
+                      </a>
+                </div>
+              </div>
+            </div>
+          </li>
+      <div class="grid">
+        <div class="column-xs-12">
+          <div class="controls">
+              <button class="previous">
+                <span class="visually-hidden">Previous</span>
+                <span class="icon arrow-left" aria-hidden="true"></span>
+              </a>
+              <button class="next">
+                <span class="visually-hidden">Next</span>
+                <span class="icon arrow-right" aria-hidden="true"></span>
+              </a>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</main>         
+    <section class="et-slide" id="tab-TableauDeSynthèseE4">
+      <h1>Tableau de synthèse E4</h1>
+      <div class="pdf-container">
+        <embed src="file:///E:/BTS%202024/8%20-%20BTS%20SIO%20-%20Annexe%208-1%20-%20Tableau%20de%20synthe%CC%80se%20-%20Epreuve%20E4%20-%20BTS%20SIO%202024%20Thomassin%20Steven.pdf" type="application/pdf" width="1000" height="620" />
+      </div>
+      <a href="file:///E:/BTS%202024/8%20-%20BTS%20SIO%20-%20Annexe%208-1%20-%20Tableau%20de%20synthe%CC%80se%20-%20Epreuve%20E4%20-%20BTS%20SIO%202024%20Thomassin%20Steven.pdf" target="_blank">Ouvrir dans une nouvelle fenêtre</a>
+        <a href="file:///E:/BTS%202024/8%20-%20BTS%20SIO%20-%20Annexe%208-1%20-%20Tableau%20de%20synthe%CC%80se%20-%20Epreuve%20E4%20-%20BTS%20SIO%202024%20Thomassin%20Steven.pdf" download>Télécharger le PDF</a>
+      </div>
+    </section>
+    <section class="et-slide" id="tab-SituationsProfessionnelles">
+      <h1>Situations Professionnelles</h1>
+      <div class="situations-container">
+        <div class="column">
+          <!-- Situation professionnelle 1 -->
+          <div class="situation-block">
+            <h2>Situation professionnelle 1</h2>
+            <h3>Projet de groupe, Site web quiz en ligne</h3>
+            <a href="details_situation_pro1.html" class="btn">Accéder aux détails</a>
+          </div>
+          <!-- Situation professionnelle 2 -->
+          <div class="situation-block">
+            <h2>Situation professionnelle 2</h2>
+            <h3>Mise en place d'un service GLPI</h3>
+            <a href="details_situation_pro2.html" class="btn">Accéder aux détails</a>
+          </div>
+          <!-- Situation professionnelle 3 -->
+          <div class="situation-block">
+            <h2>Situation professionnelle 3</h2>
+            <h3>Solution de gestion technique de parc informatique,OCS Inventory</h3>
+            <a href="details_situation_pro3.html" class="btn">Accéder aux détails</a>
+          </div>
+        </div>
+        <div class="column">
+          <!-- Situation professionnelle 4 -->
+          <div class="situation-block">
+            <h2>Situation professionnelle 4</h2>
+            <h3>Application de digitalisation des informations d'entreprise</h3>
+            <a href="details_situation_pro4.html" class="btn">Accéder aux détails</a>
+          </div>
+          <!-- Situation professionnelle 5 -->
+          <div class="situation-block">
+            <h2>Situation professionnelle 5</h2>
+            <h3>Logiciel de gestion des actifs informatiques, SnipeIT</h3>
+            <a href="details_situation_pro5.html" class="btn">Accéder aux détails</a>
+          </div>
+          <!-- Situation professionnelle 6 -->
+          <div class="situation-block">
+            <h2>Situation professionnelle 6</h2>
+            <h3>Application de compte rendu des données de production d'entreprise</h3>
+            <a href="details_situation_pro6.html" class="btn">Accéder aux détails</a>
+          </div>
+        </div>
+      </div>      
+    </section>
+    <section class="et-slide" id="tab-RéalisationsProfessionnellesE5">
+      <h1>Réalisations Professionnelles E5</h1>
+      <div class="realisations-container">
+        <div class="realisation-block">
+          <h2>Réalisation Professionnelle n°1 :</h2>
+          <h3>Site web informations climatiques</h3>
+        </br>
+          <img src="Images/Image1.png" alt="Image 1">
+          <a href="file:///E:/BTS%202024/Site%20Web%20InfoClimat.pdf" class="btn">Accéder aux documents</a>
+        </div>
+        <div class="realisation-block">
+          <h2>Réalisation Professionnelle n°2 :</h2>
+          <h3>Application Evaluation Ponctuelle Des Risques</h3>
+          <img src="Images/Image2.png" alt="Image 2">
+          <a href="file:///E:/BTS%202024/Fiche%20descriptive%20de%20r%C3%A9alisation%20professionnelle%20SLAM%20Projet2.pdf" class="btn">Accéder aux documents</a>
+        </div>
+      </div>
+    </section>
+    <div class="et-slide" id="tab-VeilleInformatique">
+      <h1>Veille Informatique</h1>
+      <div class="content-wrapper">
+        <iframe src="https://www.strategie.gouv.fr/point-de-vue/impacts-de-lintelligence-artificielle-lavenir-travail" width="600" height="600"></iframe>      
+      </div>
+  </div>  
+  </div>  
+    <section class="et-slide" id="tab-Contact">
+        <h1>Contact</h1>
+        <div class="Contact-container">
+          <!-- Bloc à gauche avec les informations personnelles -->
+          <div class="personal-info">
+            <h2>Mes informations personnelles</h2>
+            <div class="info-item">
+              <p><strong>Adresse:</strong> 45290, Varennes-Changy, France</p>
+            </div>
+            <div class="info-item">
+              <p><strong>Email:</strong> thomassin.steven@orange.fr</p>
+            </div>
+            <div class="info-item">
+              <p><strong>Téléphone:</strong> 07 61 76 86 70</p>
+            </div>
+          </div>
+          <!-- Bloc à droite avec le formulaire de contact -->
+          <div class="Contact-form">
+            <h2>Formulaire de contact</h2>
+            <form action="traitement-formulaire.php" method="post">
+              <div class="form-group">
+                <label for="name">Nom:</label>
+                <input type="text" id="name" name="name" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+              <div class="form-group">
+                <label for="subject">Sujet:</label>
+                <input type="text" id="subject" name="subject">
+              </div>
+              <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+              </div>
+              <button type="submit">Envoyer</button>
+            </form>
+          </div>
+        </div>
+      </section>      
+  </main>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="Portfolio-Js.js"></script>
+</body>
+</html>
